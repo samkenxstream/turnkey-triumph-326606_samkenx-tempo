@@ -9,7 +9,7 @@ install:
 	jb install
 
 dashboards:
-	jsonnet -J vendor -S dashboards.jsonnet -m ../tempo-mixin-compiled/
+	jsonnet -J vendor -S dashboards.jsonnet -m ../tempo-mixin-compiled/dashboards/
 
 alerts:
 	jsonnet -J vendor -S alerts.jsonnet > ../tempo-mixin-compiled/alerts.yaml
